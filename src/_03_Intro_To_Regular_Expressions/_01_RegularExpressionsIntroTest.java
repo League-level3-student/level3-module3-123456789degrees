@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test;
 
 public class _01_RegularExpressionsIntroTest {
     final String originalMessage =
-            "To: support@fakemail.com\n" +
+            "To: support@fakemail.com " +
             "From: johnDoe@aol.com\n" +
             "Hello mail support,\n" +
             "Please forward all new messages to my new e-mail address, johnDoe@league.com";
@@ -19,7 +19,7 @@ public class _01_RegularExpressionsIntroTest {
      * What the message should be after the regex method is called
      */
     final String expectedMessage =
-            "To: support@mail.com\n" +
+            "To: support@mail.com " +
             "From: johnDoe@mail.com\n" +
             "Hello mail support,\n" +
             "Please forward all new messages to my new e-mail address, johnDoe@mail.com";
